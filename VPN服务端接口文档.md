@@ -1,5 +1,10 @@
 # VPN平台接口文档
 
+[TOC]
+
+
+
+
 # 0、验证码模块
 
 ## 0.0 获取图片验证码
@@ -162,20 +167,30 @@ HTTP请求方式
       }
     ],
     "userProfile": {
-      "userId": "267687876139941888",
-      "phone": "13088888888",
-      "email": "13088888888@qq.com",
-      "promotionChannelId":"267687876139941001",
-      "secretkey": "dcdb15869e744b16be20605d688d44ee",
-      "expired": false,
-      "paying": false,
-      "expireTime": "2020-01-12 16:16:03",
-      "loginTime": "2020-01-09 16:16:03",
-      "createTime": "2020-01-09 16:16:03",
-      "signedToday": false,
-      "signedDays": 0,
-      "signedDuration": 15
-    },
+        "username": "",
+        "phone": "18812345678",
+        "email": "123456@qq.com",
+        "promotionChannelId": "0",
+        "secretKey": "bc1023ff-36ee-432f-a9e9-aca89ae13d0b",
+        "expired": false,
+        "paying": true,
+        "expireTime": "2020-12-03 11:10:31",
+        "loginTime": "2020-04-27 10:01:24",
+        "createTime": "2020-05-13 10:00:12",
+        "signedToday": false,
+        "signedDays": 3,
+        "signedDuration": 60,
+        "signInfo": {
+          "signedToday": false,
+          "signedDays": 3,
+          "signedAward": "测试1111"
+        },
+        "packagesBalance": {
+          "usedDataTraffic": 0,
+          "totalDataTraffic": 1536
+        },
+        "userId": "219134863448023102"
+      },
     "defaultNode": {
       "name": "孟买ssr",
       "nameEn": "India",
@@ -203,7 +218,7 @@ HTTP请求方式
 |isNewUser|boolean|是|是否为新用户(true:是，false:否)|
 |accessToken|String|是|访问票据|
 |messages|Array|否|获赠套餐信息|
-|userProfile|Object|是|详见1.4接口|
+|userProfile|Object|是|详见1.5接口|
 
 
 
